@@ -1,0 +1,40 @@
+# Web Proxy Server in Nodejs with SQUID
+## Introduction 
+This project shows how to set-up web proxy server using Squid.
+## Benefits of Web Proxy Server
+It can improve performance, security, and access control for web traffic.
+The proxy server caches frequently accessed web content, reducing bandwidth usage and speeding up response times.
+It also provides enhanced privacy and control over network requests.
+## Installation
+Install the required run time environment, nodejs:
+```console
+pkg install nodejs-lts
+```
+Install squid:
+```console
+pkg install squid
+```
+Clone my git repository:
+```console
+git clone
+```
+## Reconfiguring Squid Config
+Find the squid.conf file which usually in
+```console
+$PREFIX/etc/squid/squid.conf
+```
+Replace it with the squid.conf cloned from my repository
+## Run Squid and Server
+Run the squid proxy:
+```console
+squid
+```
+Run the server:
+```console
+node index
+```
+On seperate session analyze the cache:
+```console
+tail -f $PREFIX/var/log/squid/access.log
+```
+## Demo
