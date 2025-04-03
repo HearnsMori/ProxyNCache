@@ -16,7 +16,7 @@ pkg install squid
 ```
 Clone my git repository:
 ```console
-git clone
+git clone https://github.com/HearnsMori/ProxyNCache.git
 ```
 ## Reconfiguring Squid Config
 Find the squid.conf file which usually in
@@ -37,4 +37,7 @@ On seperate session analyze the cache:
 ```console
 tail -f $PREFIX/var/log/squid/access.log
 ```
+Open http://localhost:3000/proxy for https
+and http://localhost:3000/proxy2 for http
 ## Demo
+[asciinema demo of my project](https://asciinema.org/a/pBccQI2YdeOq7OxYUA6dlNOtY)
