@@ -29,6 +29,10 @@ Run the squid proxy:
 ```console
 squid
 ```
+Before running the server install the required node package:
+```console
+npm install
+```
 Run the server:
 ```console
 node index
